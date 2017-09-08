@@ -15,8 +15,8 @@ app.get('/', function (req, res) {
     res.sendFile("form.html",  { root: '/Users/Lukas/Desktop/testwithnode'})
 })
 
-app.listen(8000, function () {
-    console.log('Example app listening on port 8000!')
+app.listen(8080, function () {
+    console.log('Example app listening on port 8080!')
 })
 
 app.post("/", function(req, res) {
