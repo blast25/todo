@@ -1,0 +1,19 @@
+{
+  "name": "testwithnode",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ich",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "browser-sync": "^2.18.13",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
+  }
+}

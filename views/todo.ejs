@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    </head>
+    <body>
+        <div id="wrap">
+            <h2>Todo</h2>
+            <div id="list">
+                <form action="/add" method="post">
+                    <input type="text" id="add" name="add"/><input type="submit" value="ADD" id="sub"/></form>
+                <form action="/remove" method="post"><input id="num" type="hidden" name="num" value=""/><input type="submit" value="REMOVE" id="remove"/></form>
+                <ul>
+                <% data.forEach(function(item) { %>
+                <li v-on:click="clicked"><%= item %></li>
+                <% }) %>
+                </ul>
+            </div>
+            <div id="ctrl">
+            <form action="/remove" method="post">
+                <input id="num" type="hidden" name="num" value=""/>
+                <input type="submit" value="REMOVE" id="remove"/>
+            </form>
+            </div>
+        </div>
+    </body>
+    <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="main.js"></script>
+</html>
