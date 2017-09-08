@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/'))
 app.set('view engine', 'ejs')
 
 app.get('/', function (req, res) {
-    res.sendFile("form.html",  { root: '/Users/Lukas/Desktop/testwithnode'})
+    res.sendFile("form.html", { root : __dirname})
 })
 
 app.listen(8080, function () {
